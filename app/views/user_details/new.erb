@@ -1,0 +1,9 @@
+Enter your details :
+<hr>
+<%= form_for @user_detail do |f| %>
+    Firstname: <%= f.text_field :first_name %> <br />
+    Lastname:  <%=f.text_field :last_name %> <br />
+
+    <%= f.submit %>
+<%end%>
+
