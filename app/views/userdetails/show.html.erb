@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @userdetail.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @userdetail.last_name %>
+</p>
+
+<p>
+  <strong>Birthday:</strong>
+  <%= @userdetail.birthday %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @userdetail.gender %>
+</p>
+
+<p>
+  <strong>Contact number:</strong>
+  <%= @userdetail.contact_number %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @userdetail.address %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @userdetail.country %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @userdetail.state %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @userdetail.city %>
+</p>
+
+<p>
+  <strong>Gre date:</strong>
+  <%= @userdetail.gre_date %>
+</p>
+
+<%= link_to 'Edit', edit_userdetail_path(@userdetail) %> |
+<%= link_to 'Back', userdetails_path %>
