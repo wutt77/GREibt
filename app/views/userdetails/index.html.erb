@@ -1,0 +1,43 @@
+<h1>Listing userdetails</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Birthday</th>
+      <th>Gender</th>
+      <th>Contact number</th>
+      <th>Address</th>
+      <th>Country</th>
+      <th>State</th>
+      <th>City</th>
+      <th>Gre date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @userdetails.each do |userdetail| %>
+      <tr>
+        <td><%= userdetail.first_name %></td>
+        <td><%= userdetail.last_name %></td>
+        <td><%= userdetail.birthday %></td>
+        <td><%= userdetail.gender %></td>
+        <td><%= userdetail.contact_number %></td>
+        <td><%= userdetail.address %></td>
+        <td><%= userdetail.country %></td>
+        <td><%= userdetail.state %></td>
+        <td><%= userdetail.city %></td>
+        <td><%= userdetail.gre_date %></td>
+        <td><%= link_to 'Show', userdetail %></td>
+        <td><%= link_to 'Edit', edit_userdetail_path(userdetail) %></td>
+        <td><%= link_to 'Destroy', userdetail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Userdetail', new_userdetail_path %>
