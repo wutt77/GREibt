@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b130a90-2d4f-4913-83e5-cdee238664de" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/userdetails_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/userdetails_controller.rb" />
+    <list default="true" id="4b130a90-2d4f-4913-83e5-cdee238664de" name="Default" comment="User registration page added with scaffold command :)&#10;Also rdoc added">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/fonts/Lato-Light.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/fonts/Lato-LightItalic.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/fonts/Lato-Regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/fonts/Lato-RegularItalic.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/fonts/SourceCodePro-Bold.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/fonts/SourceCodePro-Regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/arrow_up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/brick.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/brick_link.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/bug.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/bullet_black.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/bullet_toggle_minus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/bullet_toggle_plus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/date.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/find.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/loadingAnimation.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/macFFBgHack.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/package.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/page_green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/page_white_text.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/page_white_width.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/plugin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/ruby.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/tag_blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/tag_green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/transparent.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/wrench.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/wrench_orange.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/zoom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/ApplicationController.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/ApplicationHelper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/README_rdoc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/User.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/Userdetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/UserdetailsController.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/UserdetailsHelper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/created.rid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/js/darkfish.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/fonts.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/js/navigation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/rdoc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/js/search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/js/search_index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/js/searcher.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/table_of_contents.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GREibt.iws" />
@@ -85,8 +131,8 @@
       <file leaf-file-name="rdoc.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/doc/app/rdoc.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39964476" vertical-offset="45" max-vertical-offset="8790">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.525394" vertical-offset="45" max-vertical-offset="8790">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -191,24 +237,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="GREibt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GREibt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GREibt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -440,23 +468,47 @@
       <created>1412958562353</created>
       <updated>1412958562353</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="User registration page added with scaffold command :)&#10;Also rdoc added">
+      <created>1412963688549</created>
+      <updated>1412963688549</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1215" height="1000" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2780154" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32975295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24978614" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33834586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33834586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -485,7 +537,8 @@
     </option>
     <MESSAGE value="before adding user info database" />
     <MESSAGE value="User registration page added with scaffold command :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="User registration page added with scaffold command :)" />
+    <MESSAGE value="User registration page added with scaffold command :)&#10;Also rdoc added" />
+    <option name="LAST_COMMIT_MESSAGE" value="User registration page added with scaffold command :)&#10;Also rdoc added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -779,8 +832,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/doc/app/rdoc.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39964476" vertical-offset="45" max-vertical-offset="8790">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.525394" vertical-offset="45" max-vertical-offset="8790">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding />
         </state>
       </provider>

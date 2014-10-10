@@ -1,0 +1,8 @@
+Fri, 10 Oct 2014 23:21:09 +0530
+README.rdoc	Fri, 03 Oct 2014 18:49:52 +0530
+app/controllers/application_controller.rb	Fri, 10 Oct 2014 23:19:35 +0530
+app/controllers/userdetails_controller.rb	Fri, 10 Oct 2014 23:19:36 +0530
+app/helpers/application_helper.rb	Fri, 03 Oct 2014 18:49:52 +0530
+app/helpers/userdetails_helper.rb	Wed, 08 Oct 2014 23:51:56 +0530
+app/models/user.rb	Sat, 04 Oct 2014 12:07:10 +0530
+app/models/userdetail.rb	Wed, 08 Oct 2014 23:51:56 +0530
