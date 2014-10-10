@@ -1,4 +1,5 @@
 class UserdetailsController < ApplicationController
+
   before_action :set_userdetail, only: [:show, :edit, :update, :destroy]
 
   # GET /userdetails
