@@ -1,7 +1,6 @@
 == README
 
-1.user authentication device.The line "before_action :authenticate_user!" will not allow user to see any page without authentication
-  OR We can include below line on the pages that we don't wat to show without authentication
+1.user authentication device.The line "before_action :authenticate_user!" will not allow user to see any page without authenticationor We can include below line on the pages that we don't wat to show without authentication
   before_action :authenticate_user!
 
 
