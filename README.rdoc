@@ -7,3 +7,9 @@
 2. I have used
 <tt>rake doc:app</tt>.
 
+3. Used
+<tt>rails g migration add_index_to_table_name column_name:uniq<tt>
+ In order to add unique Id and index to user_id field.
+
+
+
