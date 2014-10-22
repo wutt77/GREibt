@@ -11,5 +11,6 @@
 <tt>rails g migration add_index_to_table_name column_name:uniq<tt>
  In order to add unique Id and index to user_id field.
 
-
+4.The second parameter to label helper will allow you to set custom text.
+  <tt> <%= f.label :name, 'Your Name' %></tt>
 
