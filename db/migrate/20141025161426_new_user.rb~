@@ -1,0 +1,8 @@
+class NewUser < ActiveRecord::Migration
+  def change
+
+    remove_column :userdetails, :users_id		
+    add_reference :userdetails, :users
+
+  end
+end

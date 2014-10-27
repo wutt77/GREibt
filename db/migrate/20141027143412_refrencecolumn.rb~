@@ -1,0 +1,6 @@
+class Refrencecolumn < ActiveRecord::Migration
+  def change
+	rename_column :userdetails, :user_id, :myuserid
+	add_reference :userdetails, :user, index: true 
+  end
+end
