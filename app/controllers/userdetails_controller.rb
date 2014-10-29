@@ -2,6 +2,9 @@ class UserdetailsController < ApplicationController
 
   before_action :set_userdetail, only: [:show, :edit, :update, :destroy]
 
+  #User can only edit or destroy its own details
+  before_action :correct_user, only: [:edit, :update, :destroy]
+
   # GET /userdetails
   # GET /userdetails.json
   def index
@@ -75,5 +78,12 @@ class UserdetailsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def userdetail_params
       params.require(:userdetail).permit(:first_name, :last_name, :myuserid, :birthday, :gender, :contact_number, :address, :country, :state, :city, :gre_date)
+    end
+
+    def correct_user
+
+      @user = @userdetail.user_id
+
+      redirect_to( userdetails_url) unless @user == current_user.id
     end
 end

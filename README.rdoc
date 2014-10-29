@@ -16,3 +16,11 @@
 
 5.For validation of single user detail
   <tt> validates_uniqueness_of :user_id, :message => "details already exist"</tt>
+
+6.User can only edit or destroy its own details
+  <tt> def correct_user
+
+            @user = @userdetail.user_id
+
+            redirect_to( userdetails_url) unless @user == current_user.id
+          end</tt>
