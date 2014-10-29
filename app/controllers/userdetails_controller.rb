@@ -26,9 +26,8 @@ class UserdetailsController < ApplicationController
   # POST /userdetails
   # POST /userdetails.json
   def create
-   @user =User.find_by id: "59" 
-   
-   @userdetail = @user.userdetail.create(userdetail_params)
+    @userdetail = Userdetail.new(userdetail_params)
+
    
    @userdetail.user_id = current_user.id
 
