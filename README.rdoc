@@ -14,3 +14,5 @@
 4.The second parameter to label helper will allow you to set custom text.
   <tt> <%= f.label :name, 'Your Name' %></tt>
 
+5.For validation of single user detail
+  <tt> validates_uniqueness_of :user_id, :message => "details already exist"</tt>
