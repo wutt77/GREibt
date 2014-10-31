@@ -1,1 +1,1 @@
-json.extract! @topic, :id, :created_at, :updated_at
+json.extract! @topic, :id, :issue, :created_at, :updated_at
