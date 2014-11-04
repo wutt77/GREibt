@@ -14,8 +14,8 @@
 ActiveRecord::Schema.define(version: 20141103164912) do
 
   create_table "posts", force: true do |t|
-    t.text     "issue"
-    t.text     "description"
+    t.text     "issue",         default: "", null: false
+    t.text     "description",   default: "", null: false
     t.integer  "rating"
     t.integer  "userdetail_id"
     t.datetime "created_at"

@@ -3,6 +3,7 @@
 <table>
   <thead>
     <tr>
+      <th>User</th>
       <th>Issue</th>
       <th>Description</th>
       <th>Rating</th>
@@ -13,6 +14,7 @@
   <tbody>
     <% @posts.each do |post| %>
       <tr>
+        <td><%= post.userdetail_id %></td>
         <td><%= post.issue %></td>
         <td><%= post.description %></td>
         <td><%= post.rating %></td>
