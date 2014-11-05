@@ -13,7 +13,11 @@
 
   <div class="field">
     <%= f.label :issue %><br>
-    <%= f.text_field :issue %>
+    <%= f.text_field :issue%>
+    <%= form_for @post2 do |f2| %>
+        <%= f.text_field_tag :issue, f2.id %>
+    <% end %>
+
   </div>
   <div class="field">
     <%= f.label :description %><br>
@@ -26,4 +30,6 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+
+
 <% end %>
