@@ -16,6 +16,7 @@ class PostsController < ApplicationController
   def new
     @post = Post.new
     @post2 = Topic.find(params[:topic_id])
+    @post3 = @post2.issue
 
 
 
@@ -30,7 +31,15 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
 
+
+
     @post.userdetail_id = current_user.id
+
+    @post2 = Topic.find(params[:topic_id])
+    @post.issue= @post2.issue
+
+
+
 
     respond_to do |format|
       if @post.save

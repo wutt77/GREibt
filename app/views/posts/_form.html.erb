@@ -11,14 +11,12 @@
     </div>
   <% end %>
 
-  <div class="field">
+    <%= @post2.issue %>
+
+  <!--<div class="field">
     <%= f.label :issue %><br>
     <%= f.text_field :issue%>
-    <%= form_for @post2 do |f2| %>
-        <%= f.text_field_tag :issue, f2.id %>
-    <% end %>
-
-  </div>
+  </div>-->
   <div class="field">
     <%= f.label :description %><br>
     <%= f.text_field :description %>
@@ -30,6 +28,11 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+
+
+
+
+
 
 
 <% end %>
