@@ -15,9 +15,8 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
-    @post2 = Topic.find(params[:topic_id1])
-
-   
+    
+    @post2 = Topic.find(params[:id])
   end
 
   # GET /posts/1/edit
@@ -31,9 +30,8 @@ class PostsController < ApplicationController
 
     @post.userdetail_id = current_user.id
 
-     #Association functional between topic and post
-     @topic = Topic.find_by_id(3)
-     @topic.posts << @post
+    @topic1 = Topic.find(params[:id])
+    @post1 = @topic1.posts.create(post_params)
 
     respond_to do |format|
       if @post.save
