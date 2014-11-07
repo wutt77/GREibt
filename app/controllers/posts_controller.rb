@@ -15,9 +15,9 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
-    @post2 = Topic.find(params[:topic_id1])
 
-   
+    @@topic = Topic.find(params[:topic_id1])
+
   end
 
   # GET /posts/1/edit
@@ -27,13 +27,14 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
+
     @post = Post.new(post_params )
 
     @post.userdetail_id = current_user.id
 
      #Association functional between topic and post
-     @topic = Topic.find_by_id(3)
-     @topic.posts << @post
+     #@topic = Topic.find_by_id(3)
+     @@topic.posts << @post
 
     respond_to do |format|
       if @post.save
