@@ -1,8 +1,31 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+ # before_action :set_post, only: [:show, :edit, :update, :destroy]
+
+  before_filter :has_userdetail_and_topic, :only =>[:new, :create]
+
+
 
   # GET /posts
   # GET /posts.json
+
+  #for new association SAAS book
+
+  protected
+  def has_userdetail_and_topic
+
+    unless(@topic =Topic.find_by_id(params[:topic_id]))
+      flash[:warning] = 'post must be for an existing topic'
+    end
+  end
+
+  public
+
+  def new
+    @post = @topic.posts.build
+    #@@topic = Topic.find(params[:topic_id1])
+
+  end
+
   def index
     @posts = Post.all
   end
@@ -13,12 +36,7 @@ class PostsController < ApplicationController
   end
 
   # GET /posts/new
-  def new
-    @post = Post.new
 
-    @@topic = Topic.find(params[:topic_id1])
-
-  end
 
   # GET /posts/1/edit
   def edit
@@ -28,13 +46,18 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
 
-    @post = Post.new(post_params )
 
-    @post.userdetail_id = current_user.id
+
+    #@topic.posts << @post
+    #@current_user = current_user.id
+    @current_user.posts << @topic.posts.build(params[:postgit ])
+    #@post = Post.new(post_params )
+
+    #@post.userdetail_id = current_user.id
 
      #Association functional between topic and post
-     #@topic = Topic.find_by_id(3)
-     @@topic.posts << @post
+     #Class variable used
+     #@@topic.posts << @post
 
     respond_to do |format|
       if @post.save

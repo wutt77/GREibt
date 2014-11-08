@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
-  resources :posts
 
-  resources :topics
+
+  # nested routes
+  resources :topics do
+    resources :posts
+  end
 
   resources :userdetails
+
 
   devise_for :users, :controllers => { :registrations => "registrations" }
 

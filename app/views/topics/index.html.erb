@@ -16,7 +16,8 @@
 
         <!--link to send user to writing path-->
 
-        <td><%= link_to 'Write',  { :controller => "posts", :action => "new" , :topic_id1 => topic.id } %></td>
+
+        <!--<td></td>-->
 
         <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
         <td><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>

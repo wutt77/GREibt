@@ -4,4 +4,6 @@ class Userdetail < ActiveRecord::Base
   validates_uniqueness_of :user_id, :message => "details already exist"
 
   has_many :posts
+
+  has_many :topics, :through => :posts
 end

@@ -1,5 +1,10 @@
-<h1>New post</h1>
 
-<%= render 'form' %>
 
-<%= link_to 'Back', posts_path %>
+
+
+<%= form_tag topic_posts_path(@topic) do  %>
+    <%= render 'form' %>
+    <%= submit_tag 'Create post' %>
+
+<%end%>
+
