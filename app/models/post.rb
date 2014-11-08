@@ -2,7 +2,7 @@ class Post < ActiveRecord::Base
   #relation between topics and post
   belongs_to :topic
 
-  belongs_to :userdetail
+  belongs_to :user
 
   #post is valid only if it's associated with a topic:
 

@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_one :userdetail
 
+  has_many :posts
+  has_many :topics, :through => :posts
 end

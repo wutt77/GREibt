@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
- # before_action :set_post, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  #before_filter :authenticate_user
   before_filter :has_userdetail_and_topic, :only =>[:new, :create]
 
 
@@ -46,11 +46,14 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
 
+    @post = @topic.posts.build(post_params)
+    current_user.posts << @post
 
+
+    #current_user.posts << @topic.posts.build(params[post_params])
 
     #@topic.posts << @post
-    #@current_user = current_user.id
-    @current_user.posts << @topic.posts.build(params[:postgit ])
+
     #@post = Post.new(post_params )
 
     #@post.userdetail_id = current_user.id
@@ -61,7 +64,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
+        format.html { redirect_to [@topic, @post], notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new }
@@ -102,6 +105,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:topic_id,:issue, :description, :rating, :userdetail_id)
+      params.require(:post).permit(:topic_id,:issue, :description, :rating, :user_id )
     end
 end

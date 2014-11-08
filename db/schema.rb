@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141105051002) do
+ActiveRecord::Schema.define(version: 20141108175213) do
 
   create_table "posts", force: true do |t|
-    t.text     "issue",         default: "", null: false
-    t.text     "description",   default: "", null: false
+    t.text     "issue",       default: "", null: false
+    t.text     "description", default: "", null: false
     t.integer  "rating"
-    t.integer  "userdetail_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "topic_id"
