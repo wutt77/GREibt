@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  #root
+  root to: redirect('/topics')
+
 
   # nested routes
   resources :topics do
