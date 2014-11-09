@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141108175213) do
+ActiveRecord::Schema.define(version: 20141109185445) do
 
   create_table "posts", force: true do |t|
     t.text     "issue",       default: "", null: false
@@ -42,11 +42,11 @@ ActiveRecord::Schema.define(version: 20141108175213) do
     t.date     "gre_date"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "myuserid"
     t.integer  "user_id"
+    t.string   "myuserid"
   end
 
-  add_index "userdetails", ["myuserid"], name: "index_userdetails_on_myuserid", unique: true
+  add_index "userdetails", ["myuserid"], name: "index_userdetails_on_myuserid"
   add_index "userdetails", ["user_id"], name: "index_userdetails_on_user_id"
 
   create_table "users", force: true do |t|
