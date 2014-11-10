@@ -5,8 +5,22 @@ class UserdetailsController < ApplicationController
   #User can only edit or destroy its own details
   before_action :correct_user, only: [:edit, :update, :destroy]
 
+  #For user association withuserdetails
+  before_filter :has_user, only: [:new, :create]
+
+  protected
+  def has_user
+    unless (@user=User.find_by_id(current_user))
+      flash[:warning] = 'Userdetail must be for an existing user'  
+
+    end
+  end
+
   # GET /userdetails
   # GET /userdetails.json
+
+  public
+
   def index
     @userdetails = Userdetail.all
   end
@@ -29,12 +43,16 @@ class UserdetailsController < ApplicationController
   # POST /userdetails
   # POST /userdetails.json
   def create
+
     @userdetail = Userdetail.new(userdetail_params)
 
+    @user.userdetail= @userdetail
    
-   @userdetail.user_id = current_user.id
+    #@userdetail.user_id = current_user.id
 
     respond_to do |format|
+    
+
       if @userdetail.save
         format.html { redirect_to @userdetail, notice: 'Userdetail was successfully created.' }
         format.json { render :show, status: :created, location: @userdetail }
@@ -42,6 +60,7 @@ class UserdetailsController < ApplicationController
         format.html { render :new }
         format.json { render json: @userdetail.errors, status: :unprocessable_entity }
       end
+    
     end
   end
 
