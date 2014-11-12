@@ -67,6 +67,8 @@ GEM
       nokogiri
     orm_adapter (0.5.0)
     pg (0.17.1)
+    polymer-core-rails (0.2.0)
+      polymer-rails (~> 0.2.2)
     polymer-rails (0.2.3)
       nokogiri (~> 1.6)
       nokogumbo (~> 1.1)
@@ -142,6 +144,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   pg
+  polymer-core-rails
   polymer-rails
   rails (= 4.1.6)
   rails_12factor

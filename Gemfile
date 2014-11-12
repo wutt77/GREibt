@@ -40,6 +40,7 @@ gem 'bundler'
 
 #Polymer gem for view
 gem 'polymer-rails'
+gem 'polymer-core-rails'
 
 
 #Dependencies for Bootstrap

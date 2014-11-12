@@ -60,7 +60,6 @@ class UserdetailsController < ApplicationController
         format.html { render :new }
         format.json { render json: @userdetail.errors, status: :unprocessable_entity }
       end
-    
     end
   end
 
