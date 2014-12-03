@@ -24,3 +24,6 @@
 
             redirect_to( userdetails_url) unless @user == current_user.id
           end</tt>
+
+7.Devise View added with command
+	<tt>rails generate devise:views</tt>
