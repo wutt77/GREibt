@@ -13,24 +13,24 @@
         </div>
       <% end %>
 
-  <div class="form-group has-success has-feedback">
+              <div class="form-group">
 
-              <label class="control-label" for="inputSuccess2">
+              
                 <%= f.label :first_name %><br>
-                <%= f.text_field :first_name %>
-                
+                <%= f.text_field :first_name ,  class: 'form-control input-lg'%>
+
               </div>
-              <div class="field">
+              <div class="form-group">
                 <%= f.label :last_name %><br>
-                <%= f.text_field :last_name %>
+                <%= f.text_field :last_name,  class: 'form-control input-lg' %>
               </div>
               <div class="field">
                   <%= f.label :myuserid , 'User ID'%><br>
                   <%= f.text_field :myuserid %>
               </div>
-              <div class="field">
+              <div class='form-group'>
                 <%= f.label :birthday %><br>
-                <%= f.date_select :birthday %>
+                <%= f.date_select :birthday,  class: 'form-control input-lg' %>
               </div>
               <div class="field">
                 <%= f.label :gender %><br>
@@ -68,4 +68,4 @@
       </div>
     <% end %>
 
-  </div>
+

@@ -27,3 +27,6 @@
 
 7.Devise View added with command
 	<tt>rails generate devise:views</tt>
+
+8.Use Rails-bootstrap form for forms view
+  link:- https://github.com/aditya01933/rails-bootstrap-forms 
