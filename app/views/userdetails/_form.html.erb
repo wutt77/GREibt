@@ -1,6 +1,6 @@
 
 
-    <%= form_for(@userdetail) do |f| %>
+    <%= bootstrap_form_for(@userdetail) do |f| %>
       <% if @userdetail.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@userdetail.errors.count, "error") %> prohibited this userdetail from being saved:</h2>
@@ -13,53 +13,40 @@
         </div>
       <% end %>
 
-              <div class="form-group">
+              
 
               
-                <%= f.label :first_name %><br>
-                <%= f.text_field :first_name ,  class: 'form-control input-lg'%>
+                <%= f.text_field :first_name %>
 
-              </div>
-              <div class="form-group">
-                <%= f.label :last_name %><br>
+             
+             
+            
                 <%= f.text_field :last_name,  class: 'form-control input-lg' %>
-              </div>
-              <div class="field">
-                  <%= f.label :myuserid , 'User ID'%><br>
-                  <%= f.text_field :myuserid %>
-              </div>
-              <div class="field">
-                <%= f.label :birthday %><br>
+              
+              
+                 <%= f.text_field :myuserid, label: "User ID"%>
+              
+             
                 <%= f.date_select :birthday%>
-              </div>
-              <div class="field">
-                <%= f.label :gender %><br>
+              
+              
                 <%= f.text_field :gender %>
-              </div>
-              <div class="field">
-                <%= f.label :contact_number %><br>
+              
                 <%= f.text_field :contact_number %>
-              </div>
-              <div class="field">
-                <%= f.label :address %><br>
+             
+               
                 <%= f.text_area :address %>
-              </div>
-              <div class="field">
-                <%= f.label :country %><br>
+             
+               
                 <%= f.text_field :country %>
-              </div>
-              <div class="field">
-                <%= f.label :state %><br>
+              
+                
                 <%= f.text_field :state %>
-              </div>
-              <div class="field">
-                <%= f.label :city %><br>
+              
                 <%= f.text_field :city %>
-              </div>
-              <div class="field">
-                <%= f.label :gre_date %><br>
+              
                 <%= f.date_select :gre_date %>
-              </div>
+             
               
               <%= f.hidden_field :user_id %> 
 
