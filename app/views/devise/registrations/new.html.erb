@@ -12,18 +12,15 @@
           <%= devise_error_messages! %>
 
           
-            <%= f.email_field :email, autofocus: true %>     
+            <%= f.email_field :email, autofocus: true %>        
 
-            
-
-            <%= f.label :password do %>
-            <% if @validatable %>
-            <em>(<%= @minimum_password_length %> characters minimum)</em>
-            <% end %>
-           <% end %>
-            <%= f.password_field :password, autocomplete: "off" %>
-             
+                      
           
+
+            <% label = @validatable ? "Password <em>(#{@minimum_password_length} characters minimum)</em>".html_safe : "Password" %>
+<%= f.password_field :password, autocomplete: "off", label: label %>
+
+
             <%= f.password_field :password_confirmation, autocomplete: "off" %>
           
 

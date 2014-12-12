@@ -1,11 +1,26 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
 
-<p>
-  <strong>Issue:</strong>
-  <%= @topic.issue %>
-</p>
+<div class="col-md-4">
 
-<%= link_to 'Write', new_topic_post_path(topic_id: @topic) %>
+</div>
 
-<%= link_to 'Edit', edit_topic_path(@topic) %> |
-<%= link_to 'Back', topics_path %>
+  <div class="col-md-4">
+
+
+			<p id="notice"><%= notice %></p>
+
+			<p>
+			  <strong>Issue:</strong>
+			  <%= @topic.issue %>
+			</p>
+
+			<%= link_to 'Write', new_topic_post_path(topic_id: @topic) %>
+
+			<%= link_to 'Edit', edit_topic_path(@topic) %> |
+			<%= link_to 'Back', topics_path %>
+
+</div> 
+
+  <div class="col-md-4">
+</div>
+</div>

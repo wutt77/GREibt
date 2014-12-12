@@ -30,3 +30,20 @@
 
 8.Use Rails-bootstrap form for forms view
   link:- https://github.com/aditya01933/rails-bootstrap-forms 
+
+9.The code 
+
+			<tt><%= f.label :password do %>
+		  <% if @validatable %>
+		    <em>(<%= @minimum_password_length %> characters minimum)</em>
+		  <% end %>
+		<% end %>
+
+		<%= f.password_field :password, autocomplete: "off" %></tt>
+
+is replaced with 
+
+<tt><% label = @validatable ? "Password <em>(#{@minimum_password_length} characters minimum)</em>".html_safe : "Password" %>
+<%= f.password_field :password, autocomplete: "off", label: label %></tt>
+
+check link <a>http://stackoverflow.com/questions/27312101/devise-customization-issue-with-rails-bootstrap-forms/27334459#27334459</a>
